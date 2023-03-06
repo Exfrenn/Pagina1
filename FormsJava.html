@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="efectos.css">
+	<script type="text/JavaScript" src="javprog01.js"></script>
+	<title>Formularios</title>
+</head>
+<body><center>
+	<p class="encabezado">Formulario 2</p>
+	<table width="70%" cellpadding="5" cellspacing="5" border="1">
+		<form name="Formulario01">
+		<tr align="center">
+			<td><p>Indica tu cuenta</p></td>
+			<td><input class="campo" name="cuenta" type="text" maxlength="10" size="18"></td>
+		</tr>
+		<tr align="center" >
+			<td colspan="2"><input name="b_eje" type="button" size="18" value="Aceptar" class="boton_azul" onClick="aceptar()"></td></tr>
+		</tr>
+		<tr align="center">
+			<td><p>Número 1</p></td>
+			<td><input class="campo" name="num1" type="number" maxlength="10" size="18"></td>
+		</tr>
+		<tr align="center">
+			<td><p>Número 2</p></td>
+			<td><input class="campo" name="num2" type="number" maxlength="10" size="18"></td>
+		</tr>
+		<tr align="center">
+			<td colspan="2">
+			<table width="100%" border="1">
+				<tr>
+					<td><p>El resultado es:</p></td>
+					<td><input name="operacion" type="text" disabled="true" class="campo" style="background-color:lightgray;"></td>
+					<td><input name="resultado" type="text" disabled="true" class="campo" style="background-color:lightgray;"></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr align="center" >
+			<td colspan="2">
+				<table width="100%">
+				<td><input name="b_sum" type="button" size="18" value="Suma" class="boton_azul" onClick="sumar()"></td>
+				<td><input name="b_res" type="button" size="18" value="Resta" class="boton_rojo" onClick="restar()"></td>
+				<td><input name="b_mul" type="button" size="18" value="Multiplicacion" class="boton_amarillo" onClick="multiplicar()"></td>
+				<td><input name="b_div" type="button" size="18" value="Division" class="boton_azul" onClick="dividir()"></td>
+				<td><input name="b_res" type="reset" size="18" value="Reset" class="boton_azul" onClick="sumar()"></td>
+				</table>
+			</td>
+		</tr>
+		</form>
+	</table>
+</body></center>
+</html>
